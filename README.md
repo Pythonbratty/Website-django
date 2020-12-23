@@ -18,10 +18,10 @@ Create virtualenv:
 
 # Process Flow/Procedures
 ## mysite structure
-1. django-admin startproject mysite 
+1. django-admin startproject mysite.
 The above command sets up a project directory in the name "mysite".
 Refer to the mysite folder structure.
-Mention the subapps creted using "startapp" command in (3.) below name in settings.py file.
+Mention the subapps created using "startapp" command in (3.) below name in settings.py file.
 
 2. python manage.py runserver
 To perform all system checks.
@@ -65,8 +65,8 @@ Start the server and check whether all the apps are synchronized and are working
  
  Delete everything except the Django section and then uncomment that section. Your WSGI file should look something like this:
  
-# +++++++++++ DJANGO +++++++++++
-# To use your own Django app use code like this:
+
+## To use your own Django app use code like this:
 import os
 import sys
 
