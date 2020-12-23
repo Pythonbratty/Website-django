@@ -1,4 +1,4 @@
-# Website-django
+# Website-Django
 Django was created in the fall of 2003, when the web programmers at the Lawrence Journal-World newspaper, Adrian Holovaty and Simon Willison, began using Python to build applications. Jacob Kaplan-Moss was hired early in Django's development shortly before Simon Willison's internship ended.
 It was released publicly under a BSD license in July 2005. The framework was named after guitarist Django Reinhardt.
 In June 2008, it was announced that a newly formed Django Software Foundation (DSF) would maintain Django in the future.
@@ -77,11 +77,11 @@ if path not in sys.path:
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
 
-## Uncomment the lines below depending on your Django version
-###### then, for Django >=1.5:
+### Uncomment the lines below depending on your Django version
+### then, for Django >=1.5:
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
-###### or, for older Django <=1.4
+### or, for older Django <=1.4
 #import django.core.handlers.wsgi
 #application = django.core.handlers.wsgi.WSGIHandler()
 
