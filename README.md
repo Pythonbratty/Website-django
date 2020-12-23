@@ -12,12 +12,12 @@ Python is used throughout, even for settings, files, and data models. Django als
 This project is a bootstrap website built by django.
 
 Create virtualenv:
-1. pip install virtualenv #Install virtualenv
-2. Virtualenv venv #Creates Virtualenv
-3. venv\Scripts\activate #To activate virtualenv or use workon command to activate it in Bash
+1. pip install virtualenv      #Install virtualenv
+2. Virtualenv venv             #Creates Virtualenv
+3. venv\Scripts\activate       #To activate virtualenv or use workon command to activate it in Bash
 
 # Process Flow/Procedures
-## mysite structure
+## mysite (Main project structure)
 1. django-admin startproject mysite.
 The above command sets up a project directory in the name "mysite".
 Refer to the mysite folder structure.
@@ -30,7 +30,7 @@ To perform all system checks.
 Refer to the myapp folder structure.
 Mention "myapp" in "INSTALLED APPS" section in settings.py(mysite folder).
 
-## myapp structure
+## myapp structure(Application project structure)
 
 4. Create models with customization requirements in models.py.
 Note: Refer Django documentation while declaring the type of fields in models.py.
@@ -44,7 +44,7 @@ This provides space to accumulate the data into the DB mentioned in models.py.
 
 6. Write the codes in views.py to fetch the DB data to the endpoint.
 
-7. Write the codes in urls.py(myappp folder) to route the DB data to create an endpoint 
+7. Write the codes in urls.py(myapp folder) to route the DB data to create an endpoint. 
 
 8. Map it to urls.py in "mysite" folder's urls.py via regular expressions.
 Start the server and check whether all the apps are synchronized and are working simultaneously.
@@ -53,8 +53,8 @@ Start the server and check whether all the apps are synchronized and are working
  We can deploy the apps built in django in Pythonanywhere, Heroku, Centos, Digital Ocean, AWS and many more platforms.
  I would prefer the deployment in pythonanywhere as below-
  
- 1. Setting up your Web app and WSGI file on pythonanywhere
- Select a python web framework and set it to "Manual configurations"
+ 1. Setting up your Web app and WSGI file on pythonanywhere.
+ Select a python web framework and set it to "Manual configurations".
  
  Edit your WSGI file
  One thing that's important here: your Django project (if you're using a recent version of Django) will have a file inside it called wsgi.py. This is not the one you need to change to set things up on PythonAnywhere -- the system here ignores that file.
